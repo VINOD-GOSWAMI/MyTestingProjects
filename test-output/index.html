@@ -1,0 +1,1078 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+  <meta charset='utf-8'>
+  <title>TestNG reports</title>
+
+    <link type="text/css" href="testng-reports1.css" rel="stylesheet" id="ultra" />
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" id="retro" disabled="false"/>
+    <script type="text/javascript" src="jquery.min.js"></script>
+    <script type="text/javascript" src="testng-reports.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type='text/javascript'>
+      google.load('visualization', '1', {packages:['table']});
+      google.setOnLoadCallback(drawTable);
+      var suiteTableInitFunctions = new Array();
+      var suiteTableData = new Array();
+    </script>
+    <!--
+      <script type="text/javascript" src="jquery-ui/js/jquery-ui-1.8.16.custom.min.js"></script>
+     -->
+  </head>
+
+  <body>
+    <div class="top-banner-root">
+      <span class="top-banner-title-font">Test results</span>
+      <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
+      <br/>
+      <span class="top-banner-font-1">1 suite, 3 failed tests</span>
+    </div> <!-- top-banner-root -->
+    <div class="navigator-root">
+      <div class="navigator-suite-header">
+        <span>All suites</span>
+        <a href="#" title="Collapse/expand all the suites" class="collapse-all-link">
+          <img src="collapseall.gif" class="collapse-all-icon">
+          </img> <!-- collapse-all-icon -->
+        </a> <!-- collapse-all-link -->
+      </div> <!-- navigator-suite-header -->
+      <div class="suite">
+        <div class="rounded-window">
+          <div class="suite-header light-rounded-window-top">
+            <a href="#" panel-name="suite-Command_line_suite" class="navigator-link">
+              <span class="suite-name border-failed">Command line suite</span>
+            </a> <!-- navigator-link -->
+          </div> <!-- suite-header light-rounded-window-top -->
+          <div class="navigator-suite-content">
+            <div class="suite-section-title">
+              <span>Info</span>
+            </div> <!-- suite-section-title -->
+            <div class="suite-section-content">
+              <ul>
+                <li>
+                  <a href="#" panel-name="test-xml-Command_line_suite" class="navigator-link ">
+                    <span>[unset file name]</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="testlist-Command_line_suite" class="navigator-link ">
+                    <span class="test-stats">1 test</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="group-Command_line_suite" class="navigator-link ">
+                    <span>2 groups</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="times-Command_line_suite" class="navigator-link ">
+                    <span>Times</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="reporter-Command_line_suite" class="navigator-link ">
+                    <span>Reporter output</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="ignored-methods-Command_line_suite" class="navigator-link ">
+                    <span>Ignored methods</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="chronological-Command_line_suite" class="navigator-link ">
+                    <span>Chronological view</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+              </ul>
+            </div> <!-- suite-section-content -->
+            <div class="result-section">
+              <div class="suite-section-title">
+                <span>Results</span>
+              </div> <!-- suite-section-title -->
+              <div class="suite-section-content">
+                <ul>
+                  <li>
+                    <span class="method-stats">25 methods, 3 failed,   22 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Command_line_suite" class="hide-methods failed suite-Command_line_suite"> (hide)</a> <!-- hide-methods failed suite-Command_line_suite -->
+                      <a href="#" panel-name="suite-Command_line_suite" class="show-methods failed suite-Command_line_suite"> (show)</a> <!-- show-methods failed suite-Command_line_suite -->
+                    </span>
+                    <div class="method-list-content failed suite-Command_line_suite">
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Command_line_suite" title="com.epam.CalciTest" class="method navigator-link" hash-for-method="cosValueOfNumbers">cosValueOfNumbers</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Command_line_suite" title="com.epam.CalciTest" class="method navigator-link" hash-for-method="cotValueOfNumbers">cotValueOfNumbers</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Command_line_suite" title="com.epam.CalciTest" class="method navigator-link" hash-for-method="tanValueOfNumbers">tanValueOfNumbers</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-Command_line_suite -->
+                  </li>
+                  <li>
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-Command_line_suite" class="hide-methods passed suite-Command_line_suite"> (hide)</a> <!-- hide-methods passed suite-Command_line_suite -->
+                      <a href="#" panel-name="suite-Command_line_suite" class="show-methods passed suite-Command_line_suite"> (show)</a> <!-- show-methods passed suite-Command_line_suite -->
+                    </span>
+                    <div class="method-list-content passed suite-Command_line_suite">
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Command_line_suite" title="com.epam.CalciTest" class="method navigator-link" hash-for-method="addingTwoNumbers(-335435, -433443, -768878)">addingTwoNumbers(-335435, -433443, -768878)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Command_line_suite" title="com.epam.CalciTest" class="method navigator-link" hash-for-method="addingTwoNumbers(980.32, 1024, 2004.3200000000002)">addingTwoNumbers(980.32, 1024, 2004.3200000000002)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Command_line_suite" title="com.epam.CalciTest" class="method navigator-link" hash-for-method="addingTwoNumbers(3473.534, -335.23, 3138.304)">addingTwoNumbers(3473.534, -335.23, 3138.304)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Command_line_suite" title="com.epam.CalciTest" class="method navigator-link" hash-for-method="divideExecption">divideExecption</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Command_line_suite" title="com.epam.CalciTest" class="method navigator-link" hash-for-method="dividingTwoNumbers(4656.343, 344.325, 13.523104624990925)">dividingTwoNumbers(4656.343, 344.325, 13.523104624990925)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Command_line_suite" title="com.epam.CalciTest" class="method navigator-link" hash-for-method="dividingTwoNumbers(-393.68, 6776, -0.05809917355371901)">dividingTwoNumbers(-393.68, 6776, -0.05809917355371901)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Command_line_suite" title="com.epam.CalciTest" class="method navigator-link" hash-for-method="dividingTwoNumbers(4976.0, 67, 74.26865671641791)">dividingTwoNumbers(4976.0, 67, 74.26865671641791)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Command_line_suite" title="com.epam.CalciTest" class="method navigator-link" hash-for-method="dividingTwoNumbers(1200, 3, 400)">dividingTwoNumbers(1200, 3, 400)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Command_line_suite" title="com.epam.CalciTest" class="method navigator-link" hash-for-method="dividingTwoNumbers(-2344579.876, -56588, 41.432456987347145)">dividingTwoNumbers(-2344579.876, -56588, 41.432456987347145)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Command_line_suite" title="com.epam.CalciTest" class="method navigator-link" hash-for-method="multiplyingTwoNumbers(34543.332, 23243.233, 8.02898714272356E8)">multiplyingTwoNumbers(34543.332, 23243.233, 8.02898714272356E8)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Command_line_suite" title="com.epam.CalciTest" class="method navigator-link" hash-for-method="multiplyingTwoNumbers(876.2, -655.0, -573911.0)">multiplyingTwoNumbers(876.2, -655.0, -573911.0)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Command_line_suite" title="com.epam.CalciTest" class="method navigator-link" hash-for-method="multiplyingTwoNumbers(3, 0, 0)">multiplyingTwoNumbers(3, 0, 0)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Command_line_suite" title="com.epam.CalciTest" class="method navigator-link" hash-for-method="multiplyingTwoNumbers(-43432, -2222, 96505904)">multiplyingTwoNumbers(-43432, -2222, 96505904)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Command_line_suite" title="com.epam.CalciTest" class="method navigator-link" hash-for-method="powerOfNumbers">powerOfNumbers</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Command_line_suite" title="com.epam.CalciTest" class="method navigator-link" hash-for-method="signOfNumber">signOfNumber</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Command_line_suite" title="com.epam.CalciTest" class="method navigator-link" hash-for-method="sinValueOfNumbers">sinValueOfNumbers</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Command_line_suite" title="com.epam.CalciTest" class="method navigator-link" hash-for-method="squareRootOfNumbers">squareRootOfNumbers</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Command_line_suite" title="com.epam.CalciTest" class="method navigator-link" hash-for-method="subtractingTwoNumbers(8548, 333, 8215)">subtractingTwoNumbers(8548, 333, 8215)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Command_line_suite" title="com.epam.CalciTest" class="method navigator-link" hash-for-method="subtractingTwoNumbers(1974565, -2.4, 1974567.4)">subtractingTwoNumbers(1974565, -2.4, 1974567.4)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Command_line_suite" title="com.epam.CalciTest" class="method navigator-link" hash-for-method="subtractingTwoNumbers(3, 2.4, 0.6000000000000001)">subtractingTwoNumbers(3, 2.4, 0.6000000000000001)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Command_line_suite" title="com.epam.CalciTest" class="method navigator-link" hash-for-method="subtractingTwoNumbers(-538.34, -345.22, -193.12)">subtractingTwoNumbers(-538.34, -345.22, -193.12)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Command_line_suite" title="com.epam.CalciTest" class="method navigator-link" hash-for-method="subtractingTwoNumbers(-324.0, 234, -558.0)">subtractingTwoNumbers(-324.0, 234, -558.0)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-Command_line_suite -->
+                  </li>
+                </ul>
+              </div> <!-- suite-section-content -->
+            </div> <!-- result-section -->
+          </div> <!-- navigator-suite-content -->
+        </div> <!-- rounded-window -->
+      </div> <!-- suite -->
+    </div> <!-- navigator-root -->
+    <div class="wrapper">
+      <div class="main-panel-root">
+        <div panel-name="suite-Command_line_suite" class="panel Command_line_suite">
+          <div class="suite-Command_line_suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">com.epam.CalciTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="cosValueOfNumbers">
+                  </a> <!-- cosValueOfNumbers -->
+                  <span class="method-name">cosValueOfNumbers</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [0.4441396769705497] but found [0.8959575588946699]
+	at com.epam.CalciTest.cosValueOfNumbers(CalciTest.java:62)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at com.epam.CustomRunner.main(CustomRunner.java:13)
+... Removed 28 stack frames
+</div> <!-- stack-trace -->
+                  <em>
+(checking cos value)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="cotValueOfNumbers">
+                  </a> <!-- cotValueOfNumbers -->
+                  <span class="method-name">cotValueOfNumbers</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [1.0] but found [0.8183574478651037]
+	at com.epam.CalciTest.cotValueOfNumbers(CalciTest.java:76)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at com.epam.CustomRunner.main(CustomRunner.java:13)
+... Removed 28 stack frames
+</div> <!-- stack-trace -->
+                  <em>
+(testing for cot value)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="tanValueOfNumbers">
+                  </a> <!-- tanValueOfNumbers -->
+                  <span class="method-name">tanValueOfNumbers</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [1.0] but found [1.2219599181369434]
+	at com.epam.CalciTest.tanValueOfNumbers(CalciTest.java:70)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at com.epam.CustomRunner.main(CustomRunner.java:13)
+... Removed 28 stack frames
+</div> <!-- stack-trace -->
+                  <em>
+(testing for tan value)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Command_line_suite-class-failed -->
+          <div class="suite-Command_line_suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.epam.CalciTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="addingTwoNumbers(-335435, -433443, -768878)">
+                  </a> <!-- addingTwoNumbers(-335435, -433443, -768878) -->
+                  <span class="method-name">addingTwoNumbers</span>
+                  <span class="parameters">(-335435, -433443, -768878)</span>
+                  <em>
+(addition of numbers)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="addingTwoNumbers(980.32, 1024, 2004.3200000000002)">
+                  </a> <!-- addingTwoNumbers(980.32, 1024, 2004.3200000000002) -->
+                  <span class="method-name">addingTwoNumbers</span>
+                  <span class="parameters">(980.32, 1024, 2004.3200000000002)</span>
+                  <em>
+(addition of numbers)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="addingTwoNumbers(3473.534, -335.23, 3138.304)">
+                  </a> <!-- addingTwoNumbers(3473.534, -335.23, 3138.304) -->
+                  <span class="method-name">addingTwoNumbers</span>
+                  <span class="parameters">(3473.534, -335.23, 3138.304)</span>
+                  <em>
+(addition of numbers)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="divideExecption">
+                  </a> <!-- divideExecption -->
+                  <span class="method-name">divideExecption</span>
+                  <em>
+(test case for exception )                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="dividingTwoNumbers(4656.343, 344.325, 13.523104624990925)">
+                  </a> <!-- dividingTwoNumbers(4656.343, 344.325, 13.523104624990925) -->
+                  <span class="method-name">dividingTwoNumbers</span>
+                  <span class="parameters">(4656.343, 344.325, 13.523104624990925)</span>
+                  <em>
+(testing all data for division)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="dividingTwoNumbers(-393.68, 6776, -0.05809917355371901)">
+                  </a> <!-- dividingTwoNumbers(-393.68, 6776, -0.05809917355371901) -->
+                  <span class="method-name">dividingTwoNumbers</span>
+                  <span class="parameters">(-393.68, 6776, -0.05809917355371901)</span>
+                  <em>
+(testing all data for division)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="dividingTwoNumbers(4976.0, 67, 74.26865671641791)">
+                  </a> <!-- dividingTwoNumbers(4976.0, 67, 74.26865671641791) -->
+                  <span class="method-name">dividingTwoNumbers</span>
+                  <span class="parameters">(4976.0, 67, 74.26865671641791)</span>
+                  <em>
+(testing all data for division)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="dividingTwoNumbers(1200, 3, 400)">
+                  </a> <!-- dividingTwoNumbers(1200, 3, 400) -->
+                  <span class="method-name">dividingTwoNumbers</span>
+                  <span class="parameters">(1200, 3, 400)</span>
+                  <em>
+(testing all data for division)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="dividingTwoNumbers(-2344579.876, -56588, 41.432456987347145)">
+                  </a> <!-- dividingTwoNumbers(-2344579.876, -56588, 41.432456987347145) -->
+                  <span class="method-name">dividingTwoNumbers</span>
+                  <span class="parameters">(-2344579.876, -56588, 41.432456987347145)</span>
+                  <em>
+(testing all data for division)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="multiplyingTwoNumbers(34543.332, 23243.233, 8.02898714272356E8)">
+                  </a> <!-- multiplyingTwoNumbers(34543.332, 23243.233, 8.02898714272356E8) -->
+                  <span class="method-name">multiplyingTwoNumbers</span>
+                  <span class="parameters">(34543.332, 23243.233, 8.02898714272356E8)</span>
+                  <em>
+(testing all data for multiplication)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="multiplyingTwoNumbers(876.2, -655.0, -573911.0)">
+                  </a> <!-- multiplyingTwoNumbers(876.2, -655.0, -573911.0) -->
+                  <span class="method-name">multiplyingTwoNumbers</span>
+                  <span class="parameters">(876.2, -655.0, -573911.0)</span>
+                  <em>
+(testing all data for multiplication)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="multiplyingTwoNumbers(3, 0, 0)">
+                  </a> <!-- multiplyingTwoNumbers(3, 0, 0) -->
+                  <span class="method-name">multiplyingTwoNumbers</span>
+                  <span class="parameters">(3, 0, 0)</span>
+                  <em>
+(testing all data for multiplication)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="multiplyingTwoNumbers(-43432, -2222, 96505904)">
+                  </a> <!-- multiplyingTwoNumbers(-43432, -2222, 96505904) -->
+                  <span class="method-name">multiplyingTwoNumbers</span>
+                  <span class="parameters">(-43432, -2222, 96505904)</span>
+                  <em>
+(testing all data for multiplication)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="powerOfNumbers">
+                  </a> <!-- powerOfNumbers -->
+                  <span class="method-name">powerOfNumbers</span>
+                  <em>
+(calculate power of numbers)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="signOfNumber">
+                  </a> <!-- signOfNumber -->
+                  <span class="method-name">signOfNumber</span>
+                  <em>
+(checking sign of numbers)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="sinValueOfNumbers">
+                  </a> <!-- sinValueOfNumbers -->
+                  <span class="method-name">sinValueOfNumbers</span>
+                  <em>
+(finding sin value)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="squareRootOfNumbers">
+                  </a> <!-- squareRootOfNumbers -->
+                  <span class="method-name">squareRootOfNumbers</span>
+                  <em>
+(calculating square root of an number)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="subtractingTwoNumbers(8548, 333, 8215)">
+                  </a> <!-- subtractingTwoNumbers(8548, 333, 8215) -->
+                  <span class="method-name">subtractingTwoNumbers</span>
+                  <span class="parameters">(8548, 333, 8215)</span>
+                  <em>
+(testing all data for subtraction)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="subtractingTwoNumbers(1974565, -2.4, 1974567.4)">
+                  </a> <!-- subtractingTwoNumbers(1974565, -2.4, 1974567.4) -->
+                  <span class="method-name">subtractingTwoNumbers</span>
+                  <span class="parameters">(1974565, -2.4, 1974567.4)</span>
+                  <em>
+(testing all data for subtraction)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="subtractingTwoNumbers(3, 2.4, 0.6000000000000001)">
+                  </a> <!-- subtractingTwoNumbers(3, 2.4, 0.6000000000000001) -->
+                  <span class="method-name">subtractingTwoNumbers</span>
+                  <span class="parameters">(3, 2.4, 0.6000000000000001)</span>
+                  <em>
+(testing all data for subtraction)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="subtractingTwoNumbers(-538.34, -345.22, -193.12)">
+                  </a> <!-- subtractingTwoNumbers(-538.34, -345.22, -193.12) -->
+                  <span class="method-name">subtractingTwoNumbers</span>
+                  <span class="parameters">(-538.34, -345.22, -193.12)</span>
+                  <em>
+(testing all data for subtraction)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="subtractingTwoNumbers(-324.0, 234, -558.0)">
+                  </a> <!-- subtractingTwoNumbers(-324.0, 234, -558.0) -->
+                  <span class="method-name">subtractingTwoNumbers</span>
+                  <span class="parameters">(-324.0, 234, -558.0)</span>
+                  <em>
+(testing all data for subtraction)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Command_line_suite-class-passed -->
+        </div> <!-- panel Command_line_suite -->
+        <div panel-name="test-xml-Command_line_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite name=&quot;Command line suite&quot;&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;Command line test&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;com.epam.CalciTest&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Command line test --&gt;
+&lt;/suite&gt; &lt;!-- Command line suite --&gt;
+            </pre>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="testlist-Command_line_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Tests for Command line suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <ul>
+              <li>
+                <span class="test-name">Command line test (1 class)</span>
+              </li>
+            </ul>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="group-Command_line_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Groups for Command line suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="test-group">
+              <span class="test-group-name">Arithmetic Operation</span>
+              <br/>
+              <div class="method-in-group">
+                <span class="method-in-group-name">addingTwoNumbers</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">multiplyingTwoNumbers</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">subtractingTwoNumbers</span>
+                <br/>
+              </div> <!-- method-in-group -->
+            </div> <!-- test-group -->
+            <div class="test-group">
+              <span class="test-group-name">Trigonometric Function</span>
+              <br/>
+              <div class="method-in-group">
+                <span class="method-in-group-name">cosValueOfNumbers</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">cotValueOfNumbers</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">sinValueOfNumbers</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">tanValueOfNumbers</span>
+                <br/>
+              </div> <!-- method-in-group -->
+            </div> <!-- test-group -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="times-Command_line_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Times for Command line suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="times-div">
+              <script type="text/javascript">
+suiteTableInitFunctions.push('tableData_Command_line_suite');
+function tableData_Command_line_suite() {
+var data = new google.visualization.DataTable();
+data.addColumn('number', 'Number');
+data.addColumn('string', 'Method');
+data.addColumn('string', 'Class');
+data.addColumn('number', 'Time (ms)');
+data.addRows(25);
+data.setCell(0, 0, 0)
+data.setCell(0, 1, 'cosValueOfNumbers')
+data.setCell(0, 2, 'com.epam.CalciTest')
+data.setCell(0, 3, 16);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'dividingTwoNumbers')
+data.setCell(1, 2, 'com.epam.CalciTest')
+data.setCell(1, 3, 0);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'powerOfNumbers')
+data.setCell(2, 2, 'com.epam.CalciTest')
+data.setCell(2, 3, 0);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'squareRootOfNumbers')
+data.setCell(3, 2, 'com.epam.CalciTest')
+data.setCell(3, 3, 0);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'sinValueOfNumbers')
+data.setCell(4, 2, 'com.epam.CalciTest')
+data.setCell(4, 3, 0);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'subtractingTwoNumbers')
+data.setCell(5, 2, 'com.epam.CalciTest')
+data.setCell(5, 3, 0);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'subtractingTwoNumbers')
+data.setCell(6, 2, 'com.epam.CalciTest')
+data.setCell(6, 3, 0);
+data.setCell(7, 0, 7)
+data.setCell(7, 1, 'multiplyingTwoNumbers')
+data.setCell(7, 2, 'com.epam.CalciTest')
+data.setCell(7, 3, 0);
+data.setCell(8, 0, 8)
+data.setCell(8, 1, 'subtractingTwoNumbers')
+data.setCell(8, 2, 'com.epam.CalciTest')
+data.setCell(8, 3, 0);
+data.setCell(9, 0, 9)
+data.setCell(9, 1, 'divideExecption')
+data.setCell(9, 2, 'com.epam.CalciTest')
+data.setCell(9, 3, 0);
+data.setCell(10, 0, 10)
+data.setCell(10, 1, 'subtractingTwoNumbers')
+data.setCell(10, 2, 'com.epam.CalciTest')
+data.setCell(10, 3, 0);
+data.setCell(11, 0, 11)
+data.setCell(11, 1, 'signOfNumber')
+data.setCell(11, 2, 'com.epam.CalciTest')
+data.setCell(11, 3, 0);
+data.setCell(12, 0, 12)
+data.setCell(12, 1, 'subtractingTwoNumbers')
+data.setCell(12, 2, 'com.epam.CalciTest')
+data.setCell(12, 3, 0);
+data.setCell(13, 0, 13)
+data.setCell(13, 1, 'multiplyingTwoNumbers')
+data.setCell(13, 2, 'com.epam.CalciTest')
+data.setCell(13, 3, 0);
+data.setCell(14, 0, 14)
+data.setCell(14, 1, 'addingTwoNumbers')
+data.setCell(14, 2, 'com.epam.CalciTest')
+data.setCell(14, 3, 0);
+data.setCell(15, 0, 15)
+data.setCell(15, 1, 'dividingTwoNumbers')
+data.setCell(15, 2, 'com.epam.CalciTest')
+data.setCell(15, 3, 0);
+data.setCell(16, 0, 16)
+data.setCell(16, 1, 'dividingTwoNumbers')
+data.setCell(16, 2, 'com.epam.CalciTest')
+data.setCell(16, 3, 0);
+data.setCell(17, 0, 17)
+data.setCell(17, 1, 'dividingTwoNumbers')
+data.setCell(17, 2, 'com.epam.CalciTest')
+data.setCell(17, 3, 0);
+data.setCell(18, 0, 18)
+data.setCell(18, 1, 'multiplyingTwoNumbers')
+data.setCell(18, 2, 'com.epam.CalciTest')
+data.setCell(18, 3, 0);
+data.setCell(19, 0, 19)
+data.setCell(19, 1, 'addingTwoNumbers')
+data.setCell(19, 2, 'com.epam.CalciTest')
+data.setCell(19, 3, 0);
+data.setCell(20, 0, 20)
+data.setCell(20, 1, 'multiplyingTwoNumbers')
+data.setCell(20, 2, 'com.epam.CalciTest')
+data.setCell(20, 3, 0);
+data.setCell(21, 0, 21)
+data.setCell(21, 1, 'dividingTwoNumbers')
+data.setCell(21, 2, 'com.epam.CalciTest')
+data.setCell(21, 3, 0);
+data.setCell(22, 0, 22)
+data.setCell(22, 1, 'addingTwoNumbers')
+data.setCell(22, 2, 'com.epam.CalciTest')
+data.setCell(22, 3, 0);
+data.setCell(23, 0, 23)
+data.setCell(23, 1, 'tanValueOfNumbers')
+data.setCell(23, 2, 'com.epam.CalciTest')
+data.setCell(23, 3, 0);
+data.setCell(24, 0, 24)
+data.setCell(24, 1, 'cotValueOfNumbers')
+data.setCell(24, 2, 'com.epam.CalciTest')
+data.setCell(24, 3, 0);
+window.suiteTableData['Command_line_suite']= { tableData: data, tableDiv: 'times-div-Command_line_suite'}
+return data;
+}
+              </script>
+              <span class="suite-total-time">Total running time: 16 ms</span>
+              <div id="times-div-Command_line_suite">
+              </div> <!-- times-div-Command_line_suite -->
+            </div> <!-- times-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="reporter-Command_line_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Reporter output for Command line suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="ignored-methods-Command_line_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">0 ignored methods</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="chronological-Command_line_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Methods in chronological order</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.epam.CalciTest</div> <!-- chronological-class-name -->
+              <div class="configuration-suite before">
+                <span class="method-name">beforeSuite</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-suite before -->
+              <div class="configuration-test before">
+                <span class="method-name">beforetest</span>
+                <span class="method-start">31 ms</span>
+              </div> <!-- configuration-test before -->
+              <div class="configuration-class before">
+                <span class="method-name">beforeClass</span>
+                <span class="method-start">31 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod</span>
+                <span class="method-start">47 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod</span>
+                <span class="method-start">47 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">cosValueOfNumbers</span>
+                <span class="method-start">47 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod</span>
+                <span class="method-start">47 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod</span>
+                <span class="method-start">47 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod</span>
+                <span class="method-start">47 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod</span>
+                <span class="method-start">47 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod</span>
+                <span class="method-start">47 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <span class="method-name">addingTwoNumbers(-335435, -433443, -768878)</span>
+                <span class="method-start">47 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">addingTwoNumbers(980.32, 1024, 2004.3200000000002)</span>
+                <span class="method-start">47 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">addingTwoNumbers(3473.534, -335.23, 3138.304)</span>
+                <span class="method-start">47 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod</span>
+                <span class="method-start">63 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">dividingTwoNumbers(4656.343, 344.325, 13.523104624990925)</span>
+                <span class="method-start">63 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">multiplyingTwoNumbers(34543.332, 23243.233, 8.02898714272356E8)</span>
+                <span class="method-start">63 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod</span>
+                <span class="method-start">63 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod</span>
+                <span class="method-start">63 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod</span>
+                <span class="method-start">63 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">cotValueOfNumbers</span>
+                <span class="method-start">63 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">multiplyingTwoNumbers(876.2, -655.0, -573911.0)</span>
+                <span class="method-start">63 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod</span>
+                <span class="method-start">63 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod</span>
+                <span class="method-start">63 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod</span>
+                <span class="method-start">63 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod</span>
+                <span class="method-start">63 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <span class="method-name">dividingTwoNumbers(-2344579.876, -56588, 41.432456987347145)</span>
+                <span class="method-start">63 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod</span>
+                <span class="method-start">63 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod</span>
+                <span class="method-start">63 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod</span>
+                <span class="method-start">63 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">dividingTwoNumbers(4976.0, 67, 74.26865671641791)</span>
+                <span class="method-start">63 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod</span>
+                <span class="method-start">63 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">multiplyingTwoNumbers(-43432, -2222, 96505904)</span>
+                <span class="method-start">63 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod</span>
+                <span class="method-start">63 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod</span>
+                <span class="method-start">63 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <span class="method-name">divideExecption</span>
+                <span class="method-start">63 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod</span>
+                <span class="method-start">63 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod</span>
+                <span class="method-start">63 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod</span>
+                <span class="method-start">63 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod</span>
+                <span class="method-start">63 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <span class="method-name">multiplyingTwoNumbers(3, 0, 0)</span>
+                <span class="method-start">63 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod</span>
+                <span class="method-start">63 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod</span>
+                <span class="method-start">63 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod</span>
+                <span class="method-start">63 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod</span>
+                <span class="method-start">63 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod</span>
+                <span class="method-start">63 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <span class="method-name">dividingTwoNumbers(-393.68, 6776, -0.05809917355371901)</span>
+                <span class="method-start">63 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">dividingTwoNumbers(1200, 3, 400)</span>
+                <span class="method-start">63 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod</span>
+                <span class="method-start">63 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod</span>
+                <span class="method-start">79 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <span class="method-name">squareRootOfNumbers</span>
+                <span class="method-start">79 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod</span>
+                <span class="method-start">79 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod</span>
+                <span class="method-start">79 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <span class="method-name">powerOfNumbers</span>
+                <span class="method-start">79 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod</span>
+                <span class="method-start">79 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <span class="method-name">subtractingTwoNumbers(1974565, -2.4, 1974567.4)</span>
+                <span class="method-start">79 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod</span>
+                <span class="method-start">79 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <span class="method-name">subtractingTwoNumbers(3, 2.4, 0.6000000000000001)</span>
+                <span class="method-start">79 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod</span>
+                <span class="method-start">79 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">signOfNumber</span>
+                <span class="method-start">79 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">subtractingTwoNumbers(-324.0, 234, -558.0)</span>
+                <span class="method-start">79 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod</span>
+                <span class="method-start">79 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod</span>
+                <span class="method-start">79 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod</span>
+                <span class="method-start">79 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod</span>
+                <span class="method-start">79 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod</span>
+                <span class="method-start">79 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod</span>
+                <span class="method-start">79 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod</span>
+                <span class="method-start">79 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod</span>
+                <span class="method-start">79 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <span class="method-name">sinValueOfNumbers</span>
+                <span class="method-start">79 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">subtractingTwoNumbers(8548, 333, 8215)</span>
+                <span class="method-start">79 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">subtractingTwoNumbers(-538.34, -345.22, -193.12)</span>
+                <span class="method-start">79 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod</span>
+                <span class="method-start">79 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod</span>
+                <span class="method-start">79 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod</span>
+                <span class="method-start">79 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-test after">
+                <span class="method-name">afterTest</span>
+                <span class="method-start">94 ms</span>
+              </div> <!-- configuration-test after -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod</span>
+                <span class="method-start">94 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod</span>
+                <span class="method-start">94 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">tanValueOfNumbers</span>
+                <span class="method-start">94 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-suite after">
+                <span class="method-name">afterSuite</span>
+                <span class="method-start">131 ms</span>
+              </div> <!-- configuration-suite after -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+      </div> <!-- main-panel-root -->
+    </div> <!-- wrapper -->
+  </body>
+<script type="text/javascript" src="testng-reports2.js"></script>
+</html>

@@ -1,0 +1,19 @@
+<?xml version = "1.0" encoding = "UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name = "Calculator Functionality" parallel="methods">
+    <listeners>
+        <listener class-name="com.epam.Listners"></listener>
+    </listeners>
+    <test name = "Test Execution Flow">
+        <parameter name="abc" value="123"></parameter>
+        <groups>
+            <run>
+                <include name="Arithmetic Operation"/>
+            </run>
+        </groups>
+        <classes>
+            <class name = "com.epam.CalciTest" >
+            </class>
+        </classes>
+    </test>
+</suite>

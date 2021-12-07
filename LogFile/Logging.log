@@ -1,0 +1,91 @@
+2021-12-07 13:26:00 INFO  epam.CommonFunctionality:33 - method used AddingParticipants and response body {
+    "participantId": 13323,
+    "participantName": "Tony Stark",
+    "participantEmail": "ironman@gmail.com",
+    "mobile": 6775384444,
+    "gender": "Male",
+    "isFaculty": true,
+    "status": "Active",
+    "batchId": 28,
+    "collegeId": 306,
+    "batchName": "Testings",
+    "collegeName": "IIIT",
+    "comments": "no comment"
+}
+2021-12-07 13:26:00 INFO  epam.CommonFunctionality:34 - method used AddingParticipants and response status code  201
+2021-12-07 13:26:00 INFO  epam.CommonFunctionality:35 - method used AddingParticipants and response content type  application/json
+2021-12-07 13:26:00 INFO  epam.CommonFunctionality:36 - method used AddingParticipants and response status line  HTTP/1.1 201 
+2021-12-07 13:26:00 INFO  epam.CommonFunctionality:33 - method used adding using Participant pojo and response body {
+    "participantId": 13324,
+    "participantName": "scarlet",
+    "participantEmail": "blackwidow@epam.com",
+    "mobile": 8138632469,
+    "gender": "Male",
+    "isFaculty": null,
+    "status": "Active",
+    "batchId": 28,
+    "collegeId": 306,
+    "batchName": "Testings",
+    "collegeName": "IIIT",
+    "comments": null
+}
+2021-12-07 13:26:00 INFO  epam.CommonFunctionality:34 - method used adding using Participant pojo and response status code  201
+2021-12-07 13:26:00 INFO  epam.CommonFunctionality:35 - method used adding using Participant pojo and response content type  application/json
+2021-12-07 13:26:00 INFO  epam.CommonFunctionality:36 - method used adding using Participant pojo and response status line  HTTP/1.1 201 
+2021-12-07 13:27:08 INFO  epam.CommonFunctionality:33 - method used Getting Participants Using Prefix and response body [
+    
+]
+2021-12-07 13:27:08 INFO  epam.CommonFunctionality:34 - method used Getting Participants Using Prefix and response status code  200
+2021-12-07 13:27:08 INFO  epam.CommonFunctionality:35 - method used Getting Participants Using Prefix and response content type  application/json
+2021-12-07 13:27:08 INFO  epam.CommonFunctionality:36 - method used Getting Participants Using Prefix and response status line  HTTP/1.1 200 
+2021-12-07 13:27:08 INFO  epam.CommonFunctionality:33 - method used GettingParticipants and response body {
+    "participantId": 3329,
+    "participantName": "Trishool Parvataneni",
+    "participantEmail": "trishuparvat@gmail.com",
+    "mobile": 8985176686,
+    "gender": "Male",
+    "isFaculty": false,
+    "status": "ACTIVE",
+    "batchId": 34,
+    "collegeId": 1,
+    "batchName": "TEST_PROD",
+    "collegeName": "Pulla reddy College",
+    "comments": null
+}
+2021-12-07 13:27:08 INFO  epam.CommonFunctionality:34 - method used GettingParticipants and response status code  200
+2021-12-07 13:27:08 INFO  epam.CommonFunctionality:35 - method used GettingParticipants and response content type  application/json
+2021-12-07 13:27:08 INFO  epam.CommonFunctionality:36 - method used GettingParticipants and response status line  HTTP/1.1 200 
+2021-12-07 13:28:41 INFO  epam.CommonFunctionality:33 - method used UpdatingParticipants and response body {
+    "participantId": 13323,
+    "participantName": "Captain America",
+    "participantEmail": "captianAmerica@epam.com",
+    "mobile": null,
+    "gender": "Male",
+    "isFaculty": true,
+    "status": "ACTIVE",
+    "batchId": 28,
+    "collegeId": 306,
+    "batchName": "Testings",
+    "collegeName": "IIIT",
+    "comments": "no comment"
+}
+2021-12-07 13:28:41 INFO  epam.CommonFunctionality:34 - method used UpdatingParticipants and response status code  200
+2021-12-07 13:28:41 INFO  epam.CommonFunctionality:35 - method used UpdatingParticipants and response content type  application/json
+2021-12-07 13:28:41 INFO  epam.CommonFunctionality:36 - method used UpdatingParticipants and response status line  HTTP/1.1 200 
+2021-12-07 13:29:24 INFO  epam.CommonFunctionality:33 - method used DeletingParticipants and response body {
+    "participantId": 13324,
+    "participantName": "scarlet",
+    "participantEmail": "blackwidow@epam.com",
+    "mobile": 8138632469,
+    "gender": "Male",
+    "isFaculty": null,
+    "status": "Active",
+    "batchId": 28,
+    "collegeId": 306,
+    "batchName": "Testings",
+    "collegeName": "IIIT",
+    "comments": null
+}
+2021-12-07 13:29:24 INFO  epam.CommonFunctionality:34 - method used DeletingParticipants and response status code  200
+2021-12-07 13:29:24 INFO  epam.CommonFunctionality:35 - method used DeletingParticipants and response content type  application/json
+2021-12-07 13:29:24 INFO  epam.CommonFunctionality:36 - method used DeletingParticipants and response status line  HTTP/1.1 200 

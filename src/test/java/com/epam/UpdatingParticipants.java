@@ -1,9 +1,13 @@
 package com.epam;
 
 import io.restassured.RestAssured;
+import io.restassured.builder.ResponseSpecBuilder;
+import io.restassured.http.ContentType;
 import io.restassured.http.Method;
 import io.restassured.response.Response;
 import io.restassured.specification.RequestSpecification;
+import io.restassured.specification.ResponseSpecification;
+import org.hamcrest.Matcher;
 import org.json.simple.JSONObject;
 import org.testng.annotations.Test;
 
@@ -36,6 +40,19 @@ public class UpdatingParticipants {
         Response httpResponse = httpsRequest.request(Method.PUT, "/participants/id/13323");
         CommonFunctionality.printingStatement("UpdatingParticipants", httpResponse);
         CommonFunctionality.testingParticipantsData(httpResponse);
+
+        //through response specification
+        ResponseSpecBuilder resp=  new ResponseSpecBuilder();
+        resp.expectStatusCode(200);
+        resp.expectStatusLine("HTTP/1.1 200 ");
+        resp.expectContentType(ContentType.JSON);
+
+        ResponseSpecification responseSpecification=resp.build();
+
+        httpsRequest.given()
+                .spec(httpsRequest)
+                .when().put("/participants/id/13323").
+                then().spec(responseSpecification).log().all();
     }
 
 }

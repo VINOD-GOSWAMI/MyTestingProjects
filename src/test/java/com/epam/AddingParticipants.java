@@ -1,10 +1,13 @@
 package com.epam;
 
 import com.fasterxml.jackson.core.JsonProcessingException;
+import io.restassured.RestAssured;
+import io.restassured.builder.ResponseSpecBuilder;
 import io.restassured.http.ContentType;
 import io.restassured.http.Method;
 import io.restassured.response.Response;
 import io.restassured.specification.RequestSpecification;
+import io.restassured.specification.ResponseSpecification;
 import org.json.simple.JSONObject;
 import org.testng.annotations.Test;
 
@@ -17,7 +20,7 @@ public class AddingParticipants {
         HashMap<String, Object> participantsValue = getStringObjectHashMap();
         JSONObject participantsValues = new JSONObject(participantsValue);
 
-        RequestSpecification httpsRequest = CommonFunctionality.getRequestSpecification();
+       RequestSpecification httpsRequest = CommonFunctionality.getRequestSpecification();
         httpsRequest.contentType(ContentType.JSON);
         httpsRequest.body(participantsValues.toJSONString());
         httpsRequest.accept(ContentType.JSON);
@@ -56,18 +59,30 @@ public class AddingParticipants {
         participantDetails.setCollegeId("306");
         participantDetails.setCollegeName("IIIT");
         participantDetails.setMobile("8138632469");
-        participantDetails.setParticipantEmail("blackwidow@epam.com");
+        participantDetails.setParticipantEmail("weekend@epam.com");
         participantDetails.setGender("Male");
         participantDetails.setIsFaculty("true");
-        participantDetails.setParticipantName("scarlet");
+        participantDetails.setParticipantName("Weekend");
         participantDetails.setStatus("Active");
         httpRequest.body(participantDetails);
 
-        Response httpResponse = httpRequest.request(Method.POST, "/participants");
+    //    Response httpResponse = httpRequest.request(Method.POST, "/participants");
 
+//through response specification
+        ResponseSpecBuilder resp=  new ResponseSpecBuilder();
+        resp.expectStatusCode(201);
+        resp.expectStatusLine("HTTP/1.1 201 ");
+        resp.expectContentType(ContentType.JSON);
 
-        CommonFunctionality.testingParticipantsData(httpResponse);
-        CommonFunctionality.printingStatement("adding using Participant pojo", httpResponse);
+        ResponseSpecification responseSpecification=resp.build();
+
+        httpRequest.given()
+                .spec(httpRequest)
+                .when().post("/participants").
+                then().spec(responseSpecification).log().all();
+
+ //       CommonFunctionality.testingParticipantsData(httpResponse);
+//        CommonFunctionality.printingStatement("adding using Participant pojo", httpResponse);
     }
 
 }

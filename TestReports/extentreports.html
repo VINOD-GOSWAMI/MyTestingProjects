@@ -1,0 +1,829 @@
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<title></title>
+<link rel="apple-touch-icon" href="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@b00a2d0486596e73dd7326beacf352c639623a0e/commons/img/logo.png">
+<link rel="shortcut icon" href="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@b00a2d0486596e73dd7326beacf352c639623a0e/commons/img/logo.png">
+<link href="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@d6562a79075e061305ccfdb82f01e5e195e2d307/spark/css/spark-style.css" rel="stylesheet" />
+<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@7cc78ce/spark/js/jsontree.js"></script>
+<style type="text/css"></style></head><body class="spa bdd-report standard">
+  <div class="app">
+    <div class="layout">
+<div class="header navbar">
+<div class="vheader">
+<div class="nav-logo">
+<a href="#">
+<div class="logo" style="background-image: url('https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@b00a2d0486596e73dd7326beacf352c639623a0e/commons/img/logo.png')"></div>
+</a>
+</div>
+<ul class="nav-left">
+<li class="search-box">
+<a class="search-toggle" href="#">
+<i class="search-icon fa fa-search"></i>
+<i class="search-icon-close fa fa-close"></i>
+</a>
+</li>
+<li class="search-input"><input id="search-tests" class="form-control" type="text" placeholder="Search..."></li>
+</ul>
+<ul class="nav-right">
+<li class="m-r-10">
+<a href="#"><span class="badge badge-primary"></span></a>
+</li>
+<li class="m-r-10">
+<a href="#"><span class="badge badge-primary">Jan 5, 2022 02:44:57 PM</span></a>
+</li>
+</ul>
+</div>
+</div><div class="side-nav">
+<div class="side-nav-inner">
+<ul class="side-nav-menu">
+<li class="nav-item dropdown" onclick="toggleView('test-view')">
+<a id="nav-test" class="dropdown-toggle" href="#">
+<span class="ico"><i class="fa fa-list"></i></span>
+</a>
+</li>
+<li class="nav-item dropdown" onclick="toggleView('category-view')">
+<a id="nav-category" class="dropdown-toggle" href="#">
+<span class="ico"><i class="fa fa-tag"></i></span>
+</a>
+</li>
+<li class="nav-item dropdown" onclick="toggleView('dashboard-view')">
+<a id="nav-dashboard" class="dropdown-toggle" href="#">
+<span class="ico"><i class="fa fa-bar-chart"></i></span>
+</a>
+</li>
+</ul>
+</div>
+</div>      <div class="vcontainer">
+        <div class="main-content">
+<div class="test-wrapper row view test-view">
+  <div class="test-list">
+    <div class="test-list-tools">
+<ul class="tools pull-left">
+<li><a href="#"><span class="font-size-14">Tests</span></a></li>
+</ul>
+<ul class="tools text-right">
+<li class="dropdown">
+<a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-exclamation-circle"></i></a>
+<ul id="status-toggle" class="dropdown-menu dropdown-md p-v-0">
+<a class="dropdown-item" status="pass" href="#"><span>Pass</span><span class="status success"></span></a>
+<div class="dropdown-divider"></div>
+<a status="clear" class="dropdown-item" href="#"><span>Clear</span><span class="pull-right"><i class="fa fa-close"></i></span></a>
+</ul>
+</li>
+<li class="dropdown">
+<a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-tag"></i></a>
+<ul id="tag-toggle" class="dropdown-menu dropdown-md p-v-0">
+<a class="dropdown-item" href="#">@Read</a><a class="dropdown-item" href="#">@Update</a><a class="dropdown-item" href="#">@Delete</a><a class="dropdown-item" href="#">@Create</a>
+</ul>
+</li>
+</ul>
+</div>    <div class="test-list-wrapper scrollable">
+      <ul class="test-list-item">
+        <li class="test-item"  status="pass" test-id="1"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">Testing the Program Portal WebApplication</p>
+            <p class="text-sm">
+              <span>2:44:58 PM</span> / <span>00:01:13:815</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">Testing the Program Portal WebApplication</h5>
+<span class='badge badge-success'>01.05.2022 2:44:58 PM</span>
+<span class='badge badge-danger'>01.05.2022 2:46:12 PM</span>
+<span class='badge badge-default'>00:01:13:815</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=1</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+<div class="m-t-10 m-l-5"> To test the Program Portal Application first we have
+to do signup and signIn to complete the login process and
+login to Program Portal and goes to participant page and
+perform test of adding ,deleting, updating ,and reading
+participants information.</div>
+</div>
+</div>
+<div class="accordion mt-4">
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="2"><span class="badge log pass-bg mr-2">Pass</span>Adding Participants to Program Portal</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="com.epam.bddTesting.ProgramPortalCRUD.iSearchBaseUrlInBrowser()">
+                <span>Given I search baseUrl in browser</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.epam.bddTesting.ProgramPortalCRUD.iClickOnSignUpUrlOnSignInPage()">
+                <span>When I click on signUp url on signIn page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.epam.bddTesting.ProgramPortalCRUD.iTypeInTheEmailFieldOnToTheSignUpPage(java.lang.String)">
+                <span>And I type "vinod123@gmail.com" in the email field on to the signUp page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.epam.bddTesting.ProgramPortalCRUD.iTypeInThePasswordFieldOnToTheSignUpPage(java.lang.String)">
+                <span>And I type "123qwera" in the password field on to the signUp page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.epam.bddTesting.ProgramPortalCRUD.iClickOnSignUpButtonOnToTheOnToTheSignUpPage()">
+                <span>And I click on SignUp button on to the on to the signUp page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.epam.bddTesting.ProgramPortalCRUD.iTypeInTheEmailFieldOnToTheSignInPage(java.lang.String)">
+                <span>And I type "vinod123@gmail.com" in the email field on to the signIn page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.epam.bddTesting.ProgramPortalCRUD.iTypeInThePasswordFieldOnToTheSignInPage(java.lang.String)">
+                <span>And I type "123qwera" in the password field on to the signIn page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.epam.bddTesting.ProgramPortalCRUD.iClickOnSubmitButton()">
+                <span>And I click on Submit button</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.epam.bddTesting.ProgramPortalCRUD.iClickOnHamburgerMenu()">
+                <span>And I click on hamburger menu</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.epam.bddTesting.ProgramPortalCRUD.iClickOnProgramManagementDropdownMenu()">
+                <span>And I click on program management dropdown menu</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.epam.bddTesting.ProgramPortalCRUD.iClickOnParticipantButton()">
+                <span>And I click on participant button</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.epam.bddTesting.ProgramPortalCRUD.iSelectedRDBatchFromDropdownMenuInProgramManagementColumnOnToParticipantsPage()">
+                <span>And I selected r-d batch from dropdown menu in program management column on to participants page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.epam.bddTesting.ProgramPortalCRUD.iClickOnAddParticipantButtonInTheProgramManagementColumnOnParticipantPage()">
+                <span>When I click on add Participant Button in the program management column on participant page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.epam.bddTesting.ProgramPortalCRUD.iEnteredValidDataOnToAddParticipantPage(io.cucumber.datatable.DataTable)">
+                <span>And I entered valid data on to add participant page</span>
+      <div><table class='markup-table table '><tr><td>Fields</td><td>Values</td></tr><tr><td>Name</td><td>Tom Cruise</td></tr><tr><td>Email</td><td>tomcruise@gmail.com</td></tr><tr><td>Mobile Number</td><td>8169322808</td></tr><tr><td>Gender</td><td>MALE</td></tr><tr><td>College Name</td><td>IIIT</td></tr><tr><td>Status</td><td>ACTIVE</td></tr><tr><td>Is Faculty</td><td>YES</td></tr></table>
+      </div>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.epam.bddTesting.ProgramPortalCRUD.iClickOnSaveButtonOnToTheAddParticipantPage()">
+                <span>And I click on save button on to the add participant page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.epam.bddTesting.ProgramPortalCRUD.iverifyWhetherIsPresentInProgramPortalOnTheParticipantPage(java.lang.String)">
+                <span>Then I verify whether "Tom Cruise" is present in program portal on the participant page</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="21"><span class="badge log pass-bg mr-2">Pass</span>Reading Participants Information</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="com.epam.bddTesting.ProgramPortalCRUD.iSearchBaseUrlInBrowser()">
+                <span>Given I search baseUrl in browser</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.epam.bddTesting.ProgramPortalCRUD.iClickOnSignUpUrlOnSignInPage()">
+                <span>When I click on signUp url on signIn page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.epam.bddTesting.ProgramPortalCRUD.iTypeInTheEmailFieldOnToTheSignUpPage(java.lang.String)">
+                <span>And I type "vinod123@gmail.com" in the email field on to the signUp page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.epam.bddTesting.ProgramPortalCRUD.iTypeInThePasswordFieldOnToTheSignUpPage(java.lang.String)">
+                <span>And I type "123qwera" in the password field on to the signUp page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.epam.bddTesting.ProgramPortalCRUD.iClickOnSignUpButtonOnToTheOnToTheSignUpPage()">
+                <span>And I click on SignUp button on to the on to the signUp page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.epam.bddTesting.ProgramPortalCRUD.iTypeInTheEmailFieldOnToTheSignInPage(java.lang.String)">
+                <span>And I type "vinod123@gmail.com" in the email field on to the signIn page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.epam.bddTesting.ProgramPortalCRUD.iTypeInThePasswordFieldOnToTheSignInPage(java.lang.String)">
+                <span>And I type "123qwera" in the password field on to the signIn page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.epam.bddTesting.ProgramPortalCRUD.iClickOnSubmitButton()">
+                <span>And I click on Submit button</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.epam.bddTesting.ProgramPortalCRUD.iClickOnHamburgerMenu()">
+                <span>And I click on hamburger menu</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.epam.bddTesting.ProgramPortalCRUD.iClickOnProgramManagementDropdownMenu()">
+                <span>And I click on program management dropdown menu</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.epam.bddTesting.ProgramPortalCRUD.iClickOnParticipantButton()">
+                <span>And I click on participant button</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.epam.bddTesting.ProgramPortalCRUD.iSelectedRDBatchFromDropdownMenuInProgramManagementColumnOnToParticipantsPage()">
+                <span>And I selected r-d batch from dropdown menu in program management column on to participants page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.epam.bddTesting.ProgramPortalCRUD.iSearchInSearchFieldOnTheParticipantPage(java.lang.String)">
+                <span>When I search "Tom Cruise" in search field on the participant page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.epam.bddTesting.ProgramPortalCRUD.iVerifyUIDataOfToApiData(java.lang.String)">
+                <span>Then I verify UI data of "tomcruise@gmail.com" to api data</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="38"><span class="badge log pass-bg mr-2">Pass</span>Updating Participants Information</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="com.epam.bddTesting.ProgramPortalCRUD.iSearchBaseUrlInBrowser()">
+                <span>Given I search baseUrl in browser</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.epam.bddTesting.ProgramPortalCRUD.iClickOnSignUpUrlOnSignInPage()">
+                <span>When I click on signUp url on signIn page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.epam.bddTesting.ProgramPortalCRUD.iTypeInTheEmailFieldOnToTheSignUpPage(java.lang.String)">
+                <span>And I type "vinod123@gmail.com" in the email field on to the signUp page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.epam.bddTesting.ProgramPortalCRUD.iTypeInThePasswordFieldOnToTheSignUpPage(java.lang.String)">
+                <span>And I type "123qwera" in the password field on to the signUp page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.epam.bddTesting.ProgramPortalCRUD.iClickOnSignUpButtonOnToTheOnToTheSignUpPage()">
+                <span>And I click on SignUp button on to the on to the signUp page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.epam.bddTesting.ProgramPortalCRUD.iTypeInTheEmailFieldOnToTheSignInPage(java.lang.String)">
+                <span>And I type "vinod123@gmail.com" in the email field on to the signIn page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.epam.bddTesting.ProgramPortalCRUD.iTypeInThePasswordFieldOnToTheSignInPage(java.lang.String)">
+                <span>And I type "123qwera" in the password field on to the signIn page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.epam.bddTesting.ProgramPortalCRUD.iClickOnSubmitButton()">
+                <span>And I click on Submit button</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.epam.bddTesting.ProgramPortalCRUD.iClickOnHamburgerMenu()">
+                <span>And I click on hamburger menu</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.epam.bddTesting.ProgramPortalCRUD.iClickOnProgramManagementDropdownMenu()">
+                <span>And I click on program management dropdown menu</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.epam.bddTesting.ProgramPortalCRUD.iClickOnParticipantButton()">
+                <span>And I click on participant button</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.epam.bddTesting.ProgramPortalCRUD.iSelectedRDBatchFromDropdownMenuInProgramManagementColumnOnToParticipantsPage()">
+                <span>And I selected r-d batch from dropdown menu in program management column on to participants page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.epam.bddTesting.ProgramPortalCRUD.iSearchInSearchFieldOnTheParticipantPage(java.lang.String)">
+                <span>When I search "tomcruise@gmail.com" in search field on the participant page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.epam.bddTesting.ProgramPortalCRUD.iClickOnEditButtonToEditParticipantData()">
+                <span>And I click on edit button to edit participant data</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.epam.bddTesting.ProgramPortalCRUD.iEnteredValidDataOnToEditParticipantPage(io.cucumber.datatable.DataTable)">
+                <span>And I entered valid data on to edit participant page</span>
+      <div><table class='markup-table table '><tr><td>Fields</td><td>Values</td></tr><tr><td>Name</td><td>The Weekend</td></tr><tr><td>Mobile Number</td><td>9322808816</td></tr><tr><td>Gender</td><td>MALE</td></tr><tr><td>College Name</td><td>IIIT</td></tr><tr><td>Status</td><td>ACTIVE</td></tr><tr><td>Is Faculty</td><td>NO</td></tr></table>
+      </div>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.epam.bddTesting.ProgramPortalCRUD.iClickOnSaveButtonOnToTheEditParticipantPage()">
+                <span>And I click on save button on to the edit participant page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.epam.bddTesting.ProgramPortalCRUD.iSearchInSearchFieldOnTheParticipantPage(java.lang.String)">
+                <span>And I search "The Weekend" in search field on the participant page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.epam.bddTesting.ProgramPortalCRUD.iVerifyUIDataOfWithDatabaseData(java.lang.String)">
+                <span>Then I verify UI Data of "tomcruise@gmail.com" with database data</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="59"><span class="badge log pass-bg mr-2">Pass</span>Deleting Participants Information</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="com.epam.bddTesting.ProgramPortalCRUD.iSearchBaseUrlInBrowser()">
+                <span>Given I search baseUrl in browser</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.epam.bddTesting.ProgramPortalCRUD.iClickOnSignUpUrlOnSignInPage()">
+                <span>When I click on signUp url on signIn page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.epam.bddTesting.ProgramPortalCRUD.iTypeInTheEmailFieldOnToTheSignUpPage(java.lang.String)">
+                <span>And I type "vinod123@gmail.com" in the email field on to the signUp page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.epam.bddTesting.ProgramPortalCRUD.iTypeInThePasswordFieldOnToTheSignUpPage(java.lang.String)">
+                <span>And I type "123qwera" in the password field on to the signUp page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.epam.bddTesting.ProgramPortalCRUD.iClickOnSignUpButtonOnToTheOnToTheSignUpPage()">
+                <span>And I click on SignUp button on to the on to the signUp page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.epam.bddTesting.ProgramPortalCRUD.iTypeInTheEmailFieldOnToTheSignInPage(java.lang.String)">
+                <span>And I type "vinod123@gmail.com" in the email field on to the signIn page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.epam.bddTesting.ProgramPortalCRUD.iTypeInThePasswordFieldOnToTheSignInPage(java.lang.String)">
+                <span>And I type "123qwera" in the password field on to the signIn page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.epam.bddTesting.ProgramPortalCRUD.iClickOnSubmitButton()">
+                <span>And I click on Submit button</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.epam.bddTesting.ProgramPortalCRUD.iClickOnHamburgerMenu()">
+                <span>And I click on hamburger menu</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.epam.bddTesting.ProgramPortalCRUD.iClickOnProgramManagementDropdownMenu()">
+                <span>And I click on program management dropdown menu</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.epam.bddTesting.ProgramPortalCRUD.iClickOnParticipantButton()">
+                <span>And I click on participant button</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.epam.bddTesting.ProgramPortalCRUD.iSelectedRDBatchFromDropdownMenuInProgramManagementColumnOnToParticipantsPage()">
+                <span>And I selected r-d batch from dropdown menu in program management column on to participants page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.epam.bddTesting.ProgramPortalCRUD.iSearchInSearchFieldOnTheParticipantPage(java.lang.String)">
+                <span>When I search "tomcruise@gmail.com" in search field on the participant page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.epam.bddTesting.ProgramPortalCRUD.iClickOnDeleteButtonOnToTheParticipantPage()">
+                <span>And I click on delete button on to the participant page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.epam.bddTesting.ProgramPortalCRUD.iVerifyIsNotPresentOnToTheParticipantPage(java.lang.String)">
+                <span>Then I verify "The Weekend" is not present on to the participant page</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+</div>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+<div class="test-content scrollable">
+<div class="test-content-tools">
+<ul><li><a class="back-to-test" href="#"><i class="fa fa-arrow-left"></i></a></li></ul>
+</div>
+<div class="test-content-detail"><div class="detail-body"></div></div>
+</div></div>
+<div class="test-wrapper row view category-view attributes-view">
+<div class="test-list">
+<div class="test-list-tools">
+<ul class="tools pull-left"><li><a href=""><span class="font-size-14">Category</span></a></li></ul>
+<ul class="tools text-right"><li><a href="#"><span class="badge badge-primary">4</span></a></li></ul>
+</div>
+<div class="test-list-wrapper scrollable">
+<ul class="test-list-item">
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>1</span>
+</span>
+<p class="name">@Read</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@Read</h4>
+<span status="pass" class='badge log pass-bg'>1 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>14:45:13 PM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='21'>Reading Participants Information</a>
+<div class="">
+<span class="badge badge-default">Testing the Program Portal WebApplication.Reading Participants Information</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>1</span>
+</span>
+<p class="name">@Update</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@Update</h4>
+<span status="pass" class='badge log pass-bg'>1 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>14:45:32 PM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='38'>Updating Participants Information</a>
+<div class="">
+<span class="badge badge-default">Testing the Program Portal WebApplication.Updating Participants Information</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>1</span>
+</span>
+<p class="name">@Delete</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@Delete</h4>
+<span status="pass" class='badge log pass-bg'>1 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>14:45:49 PM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='59'>Deleting Participants Information</a>
+<div class="">
+<span class="badge badge-default">Testing the Program Portal WebApplication.Deleting Participants Information</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>1</span>
+</span>
+<p class="name">@Create</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@Create</h4>
+<span status="pass" class='badge log pass-bg'>1 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>14:44:58 PM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='2'>Adding Participants to Program Portal</a>
+<div class="">
+<span class="badge badge-default">Testing the Program Portal WebApplication.Adding Participants to Program Portal</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+</ul>
+</div>
+</div>
+<div class="test-content scrollable">
+<div class="test-content-detail">
+<div class="detail-body"></div>
+</div>
+</div>
+</div><div class="container-fluid p-4 view dashboard-view">
+<div class="row">
+<div class="col-md-3">
+<div class="card"><div class="card-body">
+<p class="m-b-0">Started</p>
+<h3>Jan 5, 2022 02:44:57 PM</h3>
+</div></div>
+</div>
+<div class="col-md-3">
+<div class="card"><div class="card-body">
+<p class="m-b-0">Ended</p>
+<h3>Jan 5, 2022 02:46:12 PM</h3>
+</div></div>
+</div>
+<div class="col-md-3">
+<div class="card"><div class="card-body">
+<p class="m-b-0 text-pass">Features Passed</p>
+<h3>1</h3>
+</div></div>
+</div>
+<div class="col-md-3">
+<div class="card"><div class="card-body">
+<p class="m-b-0 text-fail">Features Failed</p>
+<h3>0</h3>
+</div></div>
+</div>
+</div>
+<div class="row">
+<div class="col-md-4">
+<div class="card">
+<div class="card-header">
+<h6 class="card-title">Features</h6>
+</div>
+<div class="card-body">
+<div class="">
+<canvas id='parent-analysis' width='115' height='90'></canvas>
+</div>
+</div>
+<div class="card-footer">
+<div><small data-tooltip='100%'>
+<b>1</b> features passed
+</small>
+</div>
+<div>
+<small data-tooltip='0%'><b>0</b> features failed,
+<b>0</b> skipped, <b data-tooltip='0%'>0</b> others
+</small>
+</div>
+</div>
+</div>
+</div>
+<div class="col-md-4">
+<div class="card">
+<div class="card-header">
+<h6 class="card-title">Scenarios</h6>
+</div>
+<div class="card-body">
+<div class="">
+<canvas id='child-analysis' width='115' height='90'></canvas>
+</div>
+</div>
+<div class="card-footer">
+<div><small data-tooltip='100%'><b>4</b> scenarios passed</small></div>
+<div>
+<small data-tooltip='0%'><b>0</b> scenarios failed,
+<b>0</b> skipped, <b data-tooltip='%'>0</b> others
+</small>
+</div>
+</div>
+</div>
+</div>
+<div class="col-md-4">
+<div class="card">
+<div class="card-header">
+<h6 class="card-title">Steps</h6>
+</div>
+<div class="card-body">
+<div class="">
+<canvas id='grandchild-analysis' width='115' height='90'></canvas>
+</div>
+</div>
+<div class="card-footer">
+<div><small data-tooltip='100%'><b>63</b> steps passed</small></div>
+<div>
+<small data-tooltip='0%'><b>0</b> steps failed,
+<b>0</b> skipped, <b data-tooltip='%'>0</b> others
+</small>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="row"><div class="col-md-12">
+<div class="card"><div class="card-header"><p>Timeline</p></div>
+<div class="card-body pt-0"><div>
+<canvas id="timeline" height="120"></canvas>
+</div></div>
+</div>
+</div></div>
+<script>
+var timeline = {
+"Testing the Program Portal WebApplication":73.815
+};
+</script>
+<div class="row">
+<div class="col-lg-6 col-md-12 category-container">
+<div class="card">
+<div class="card-header"><p>Tags</p></div>
+<div class="card-body pb-0 pt-0"><table class="table table-sm table-bordered">
+<thead><tr class="bg-gray"><th>Name</th><th>Passed</th><th>Failed</th><th>Skipped</th><th>Others</th><th>Passed %</th></tr></thead><tbody>
+<tr>
+<td>@Read</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+<tr>
+<td>@Update</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+<tr>
+<td>@Delete</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+<tr>
+<td>@Create</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+</div>
+</div>
+<script>
+var statusGroup = {
+parentCount: 5,
+passParent: 1,
+failParent: 0,
+warningParent: 0,
+skipParent: 0,
+childCount: 5,
+passChild: 4,
+failChild: 0,
+warningChild: 0,
+skipChild: 0,
+infoChild: 0,
+grandChildCount: 5,
+passGrandChild: 63,
+failGrandChild: 0,
+warningGrandChild: 0,
+skipGrandChild: 0,
+infoGrandChild: 0,
+eventsCount: 5,
+};
+</script>        </div>
+      </div>
+    </div>
+  </div>
+<script src="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@d6562a79075e061305ccfdb82f01e5e195e2d307/spark/js/spark-script.js"></script>
+<script type="text/javascript"></script></body>
+</html>

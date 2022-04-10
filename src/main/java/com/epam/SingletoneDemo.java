@@ -1,6 +1,5 @@
 package com.epam;
 
-
 import java.sql.*;
 
 public class SingletoneDemo {
@@ -31,5 +30,4 @@ public class SingletoneDemo {
         }
         return resultSet;
     }
-
 }
